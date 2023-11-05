@@ -2,9 +2,9 @@ import time
 
 # Simulating log sources with sample data
 log_sources = {
-    "Server_A": ["Error occurred", "Connection established", "Data processed", "Error occurred"],
-    "Server_B": ["Connection established", "Data processed", "Error occurred"],
-    "Server_C": ["Error occurred", "Data processed", "Connection established"]
+    "Server_A": ["Data processed", "Error occurred"],
+    "Server_B": ["Connection established","Error occurred"],
+    "Server_C": ["Error occurred","Connection established"]
 }
 
 # Log capturing and event correlation

@@ -9,7 +9,7 @@ rcvd = 0				# Recovered file ID
 while byte:
 	found = byte.find(b'\xff\xd8\xff\xe0\x00\x10\x4a\x46')
 	if found >= 0:
-		drec = True
+		drec = True  #header found
 		print('==== Found JPG at location: ' + str(hex(found+(size*offs))) + ' ====')
 		# Now lets create recovered file and search for ending signature
 		fileN = open(str(rcvd) + '.jpg', "wb")
